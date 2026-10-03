@@ -1,0 +1,12 @@
+package GPTPractiseSet.Inheritance;
+
+public class Developer extends Employee{
+    public Developer(int id, String name, double salary) {
+        super(id, name, salary);
+    }
+
+    @Override
+    public double calculateBonus(){
+        return getSalary()*0.15;
+    }
+}
